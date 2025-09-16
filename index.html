@@ -299,8 +299,8 @@ header p {
         }),
         headers: { "Content-Type": "application/json" }
       })
-      .then(res => console.log("Saved to Sheet"))
-      .catch(err => console.error("Error:", err));
+      .then(res => res.json().then(data => console.log("Saved:", data)))
+.catch(err => console.error("Error:", err));
     });
   </script>
 </body>
