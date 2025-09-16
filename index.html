@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amity International School Vrindavan Yojna - <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amity International School Vrindavan Yojna - Quizathon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f9ff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #002147;
+      color: #ffcc00;
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      height: 60px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      text-align: center;
+      color: #002147;
+    }
+    .timer {
+      font-size: 18px;
+      font-weight: bold;
+      color: #d9534f;
+      text-align: right;
+      margin-bottom: 15px;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .question h3 {
+      margin-bottom: 10px;
+      color: #002147;
+    }
+    .question label {
+      display: block;
+      margin: 6px 0;
+      cursor: pointer;
+    }
+    button {
+      background: #002147;
+      color: #ffcc00;
+      padding: 10px 20px;
+      font-size: 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #013366;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      color: #002147;
+    }
+    .hidden {
+      display: none;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    header img {
+  max-width: 450px;   
+  height: auto;       
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-size: 28px;    
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+header p {
+  font-size: 34px;    
+  font-weight: bold;
+  margin: 0;
+  color: #ffcc00;
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Amity Logo" width="1000"/>
+    <h2>Amity International School,Vrindavan Yojna</h2>
+    <p><b>Amity Quizathon</p></b>
+  </header>
+
+
+  <div class="container">
+    <!-- Student Info Form -->
+    <div id="studentInfo">
+      <h2>Enter Your Details</h2>
+      <form id="studentForm">
+        <label>Full Name:</label>
+        <input type="text" id="studentName" required />
+
+        <label>Class:</label>
+        <select id="studentClass" required>
+          <option value="">Select</option>
+          <option value="Class 6">Class 6</option>
+          <option value="Class 7">Class 7</option>
+          <option value="Class 8">Class 8</option>
+          <option value="Class 9">Class 9</option>
+          <option value="Class 10">Class 10</option>
+          <option value="Class 11">Class 11</option>
+          <option value="Class 12">Class 12</option>
+        </select>
+
+        <label>Roll Number:</label>
+        <input type="text" id="rollNo" required />
+
+        <div style="text-align:center; margin-top:15px;">
+          <button type="submit">Start Quiz</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Quiz Form -->
+    <div id="quizSection" class="hidden">
+      <div class="timer">Time Left: <span id="time">10:00</span></div>
+
+      <form id="quizForm">
+        <!-- Q1 -->
+        <div class="question">
+          <h3>1. What is the SI unit of Force?</h3>
+          <label><input type="radio" name="q1" value="1"> Newton</label>
+          <label><input type="radio" name="q1" value="0"> Joule</label>
+          <label><input type="radio" name="q1" value="0"> Watt</label>
+        </div>
+
+        <!-- Q2 -->
+        <div class="question">
+          <h3>2. Which vitamin is also known as Ascorbic Acid?</h3>
+          <label><input type="radio" name="q2" value="0"> Vitamin A</label>
+          <label><input type="radio" name="q2" value="0"> Vitamin B</label>
+          <label><input type="radio" name="q2" value="1"> Vitamin C</label>
+        </div>
+
+        <!-- Q3 -->
+        <div class="question">
+          <h3>3. H₂O is the chemical formula of?</h3>
+          <label><input type="radio" name="q3" value="0">Oxygen</label>
+          <label><input type="radio" name="q3" value="0"> Hydrogen</label>
+          <label><input type="radio" name="q3" value="1"> Water</label>
+        </div>
+     <!-- Q4 -->
+      <div class="question">
+          <h3>4. The square root of 144 is?</h3>
+          <label><input type="radio" name="q4" value="1">12</label>
+          <label><input type="radio" name="q4" value="0">10</label>
+          <label><input type="radio" name="q4" value="0">13</label>
+        </div>
+     <!-- Q5 -->
+     <div class="question">
+          <h3>5.Which gas is essential for photosynthesis?</h3>
+          <label><input type="radio" name="q4" value="0">Oxygen</label>
+          <label><input type="radio" name="q4" value="1">Carbon Dioxide</label>
+          <label><input type="radio" name="q4" value="0">Hydrogen</label>
+        </div>
+
+        <div style="text-align:center;">
+          <button type="submit">Submit Quiz</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Result Section -->
+    <div class="result hidden" id="result"></div>
+  </div>
+
+  <script>
+    let studentName = "";
+    let studentClass = "";
+    let rollNo = "";
+    let time = 5 * 60;
+    let timerInterval;
+
+    // Start Quiz after student info
+    document.getElementById("studentForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      studentName = document.getElementById("studentName").value;
+      studentClass = document.getElementById("studentClass").value;
+      rollNo = document.getElementById("rollNo").value;
+
+      document.getElementById("studentInfo").classList.add("hidden");
+      document.getElementById("quizSection").classList.remove("hidden");
+
+      // Start timer
+      timerInterval = setInterval(updateTimer, 1000);
+      updateTimer();
+    });
+
+    function updateTimer() {
+      let minutes = Math.floor(time / 60);
+      let seconds = time % 60;
+      document.getElementById("time").textContent = 
+        (minutes < 10 ? "0" : "") + minutes + ":" + 
+        (seconds < 10 ? "0" : "") + seconds;
+      time--;
+
+      if (time < 0) {
+        clearInterval(timerInterval);
+        document.getElementById("quizForm").submit();
+      }
+    }
+
+    // Quiz Submission
+    document.getElementById("quizForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      clearInterval(timerInterval);
+
+      let score = 0;
+      let total = 3;
+      let formData = new FormData(this);
+
+      for (let [key, value] of formData.entries()) {
+        score += parseInt(value);
+      }
+
+      // Show result to student
+      document.getElementById("quizSection").classList.add("hidden");
+      let resultDiv = document.getElementById("result");
+      resultDiv.classList.remove("hidden");
+      resultDiv.innerHTML = `
+        <p>🎉 Quiz Completed!</p>
+        <p><b>Name:</b> ${studentName}</p>
+        <p><b>Class:</b> ${studentClass}</p>
+        <p><b>Roll No:</b> ${rollNo}</p>
+        <p><b>Your Score:</b> ${score} / ${total}</p>
+      `;
+
+      // Send data to Google Sheet
+      fetch("https://script.google.com/u/0/home/projects/1x42dwxQxK2OEEv3p5yosnYA2IADRWgyCKHMG3AwyYOOsAuw_Wc-uo2XG/edit", {
+        method: "POST",
+        body: JSON.stringify({
+          name: studentName,
+          class: studentClass,
+          roll: rollNo,
+          score: score + " / " + total
+        }),
+        headers: { "Content-Type": "application/json" }
+      })
+      .then(res => console.log("Saved to Sheet"))
+      .catch(err => console.error("Error:", err));
+    });
+  </script>
+</body>
+</html>
