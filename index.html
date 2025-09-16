@@ -86,22 +86,52 @@
       border: 1px solid #ccc;
     }
     header img {
-  max-width: 450px;   
-  height: auto;       
-  margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
 }
 
+/* Responsive text scaling */
 header h2 {
-  font-size: 28px;    
-  font-weight: bold;
-  margin: 10px 0 5px 0;
+  font-size: 24px;
 }
 
 header p {
-  font-size: 34px;    
+  font-size: 32px;
   font-weight: bold;
-  margin: 0;
+  margin: 10px 0 0 0;
   color: #ffcc00;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  header h2 {
+    font-size: 20px;
+  }
+
+  header p {
+    font-size: 24px;
+  }
+
+  .container {
+    margin: 15px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header img {
+    max-width: 80%;   /* shrink logo more on very small screens */
+  }
+
+  header h2 {
+    font-size: 18px;
+  }
+
+  header p {
+    font-size: 20px;
+  }
 }
 
 
