@@ -212,9 +212,9 @@ header p {
      <!-- Q5 -->
      <div class="question">
           <h3>5.Which gas is essential for photosynthesis?</h3>
-          <label><input type="radio" name="q4" value="0">Oxygen</label>
-          <label><input type="radio" name="q4" value="1">Carbon Dioxide</label>
-          <label><input type="radio" name="q4" value="0">Hydrogen</label>
+          <label><input type="radio" name="q5" value="0">Oxygen</label>
+          <label><input type="radio" name="q5" value="1">Carbon Dioxide</label>
+          <label><input type="radio" name="q5" value="0">Hydrogen</label>
         </div>
 
         <div style="text-align:center;">
@@ -289,7 +289,7 @@ header p {
       `;
 
       // Send data to Google Sheet
-      fetch("https://script.google.com/macros/s/AKfycbyV1pnKn-a5CS-c7DHMmKnQBiA7gbTYrkapw02lVILxWoPsVZArM0f86qGaT3p1Vu0H/exec", {
+      fetch("https://script.google.com/macros/s/AKfycbzepwVtvCyWyZMv0Y3g2clrtKfjxYzOhsfdzVArNesQB3W2xy8grv3HLq12lXTR03RE/exec", {
         method: "POST",
         body: JSON.stringify({
           name: studentName,
